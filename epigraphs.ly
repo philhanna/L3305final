@@ -151,10 +151,12 @@ global = {
     \new StaffGroup <<    
       \new Staff \with {
         midiInstrument = "cello"
+        midiMaximumVolume = #1.0
       } \cello
       \new PianoStaff \with {
         midiInstrument = "acoustic grand"
         midiReverbLevel = #0.3
+        midiMaximumVolume = #0.8
       }
       <<
         \new Staff = "upper" << \rh \dynamics >>

@@ -8,7 +8,7 @@
   title = "Three Epigraphs of William Blake"
   subtitle = "for Cello and Piano"
   subsubtitle = \markup \large "№ 1"
-  composer = "Phil Hanna"
+  composer = "Phil Hanna, Op. 7"
   poet = \markup {
     \smaller
     \center-column {
@@ -16,6 +16,10 @@
       \vspace #-0.3
       \line { (1757-1827) }
     }
+  }
+  dedication = \markup \italic \center-column {
+    \line { To Elena Nezhdanova and Roman Placzek }
+    \vspace #1
   }
 }
 
@@ -151,12 +155,12 @@ global = {
     \new StaffGroup <<    
       \new Staff \with {
         midiInstrument = "cello"
-        midiMaximumVolume = #1.0
+        midiMaximumVolume = #0.9
       } \cello
       \new PianoStaff \with {
         midiInstrument = "acoustic grand"
         midiReverbLevel = #0.3
-        midiMaximumVolume = #0.8
+        midiMaximumVolume = #1.0
       }
       <<
         \new Staff = "upper" << \rh \dynamics >>
